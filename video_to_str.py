@@ -25,6 +25,7 @@ import subprocess
 from cv2 import VideoWriter, VideoWriter_fourcc, imread, resize
 from PIL import Image, ImageFont, ImageDraw
 
+
 # 命令行输入参数处理
 # aparser = argparse.ArgumentParser()
 # aparser.add_argument('file')
@@ -40,6 +41,8 @@ from PIL import Image, ImageFont, ImageDraw
 # SAVE = args.save
 # FPS = args.fps
 # 像素对应ascii码
+
+
 
 
 ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:oa+>!:+. ")
@@ -180,9 +183,9 @@ def video_add_mp3(file_name, mp3_file):
 
 
 if __name__ == '__main__':
-    INPUT = r".\data\video.mp4"
-    OUTPUT = r".\data\video1.mp4"
-    SAVE = r".\data\video2.mp4"
+    INPUT = r".\data\dance.mp4"
+    OUTPUT = r".\data\dance1.mp4"
+    SAVE = r".\data\dance2.mp4"
     FPS = "24"
     vc = video2txt_jpg(INPUT)
     FPS = vc.get(cv2.CAP_PROP_FPS)  # 获取帧率
